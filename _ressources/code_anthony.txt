@@ -1,0 +1,16 @@
+ <td><select name="mois">
+              <?php
+                for ($i=1; $i <13 ; $i++) {
+                  if($i==date("m")){
+                    ?>
+                    <option selected value="<?php echo $i;?>"><?php echo $i;?></option>
+                    <?php
+                  }else{
+                    ?>
+                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                    <?php
+                  }
+                }
+              ?>
+                </select>
+            </td>
